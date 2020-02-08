@@ -14,11 +14,8 @@
       <div class="container-fluid">
           <div class="row row-offcanvas row-offcanvas-left">
               {{ partial "sidebar.html" . }}
-              {{ partial "portfolio.html" . }}
               
-              {{ range where .Pages "Section" "portfolio" }}
-                {{ partial "portfolio.html" . }}
-              {{ end }}
+              {{ partial "portfolio.html" . }}
           </div>
       </div>
   </div>
