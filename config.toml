@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://kind-wing-f62dc3.netlify.com/"
 languageCode = "en-us"
 title = "Kate Dee"
 theme = "hugo-creative-portfolio-theme"

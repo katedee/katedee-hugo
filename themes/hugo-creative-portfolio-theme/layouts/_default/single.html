@@ -5,6 +5,14 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>{{ .Title }}</h1>
+         
+         {{ with .Params.image }}
+          <span class="meta-title">Tag{{ if gt (len .) 1 }}s{{ end }}</span>
+          {{ range . }}
+            <img src="/{{ . }}" alt="">
+          {{ end }}
+         {{ end }}
+
          {{ .Content }}
          {{ template "_internal/disqus.html" . }}
       </div>
